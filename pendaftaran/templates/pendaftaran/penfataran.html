@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Siswa Baru</title>
+</head>
+<body>
+    <h1>Pendaftaran Siswa Baru</h1>
+    <form method="POST">
+        {% csrf-token %}
+        {{ siswa_form.as_p }}
+        {{ orang_tua_form.as_p}}
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+</html>
